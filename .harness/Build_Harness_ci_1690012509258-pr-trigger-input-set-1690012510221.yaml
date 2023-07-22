@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_Harness_ci_1690012509258-pr-trigger-input-set
+  identifier: Build_Harness_ci_1690012509258prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: IVAN
+  pipeline:
+    identifier: Build_Harness_ci_1690012509258
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
