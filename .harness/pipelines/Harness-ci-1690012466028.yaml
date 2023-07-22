@@ -1,0 +1,33 @@
+pipeline:
+  identifier: Build_Harness_ci_1690012509258
+  name: Build Harness-ci
+  orgIdentifier: default
+  projectIdentifier: IVAN
+  properties:
+    ci:
+      codebase:
+        build: <+input>
+        connectorRef: account.Github
+        repoName: prasadareti143/Harness-ci
+  stages:
+    - stage:
+        identifier: build
+        name: build
+        spec:
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  identifier: echo
+                  name: echo
+                  spec:
+                    command: echo hello world
+                  timeout: ""
+                  type: Run
+          platform:
+            arch: Amd64
+            os: Linux
+          runtime:
+            spec: {}
+            type: Cloud
+        type: CI
