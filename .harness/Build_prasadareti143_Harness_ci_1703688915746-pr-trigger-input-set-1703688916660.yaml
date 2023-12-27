@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_prasadareti143_Harness_ci_1703688915746-pr-trigger-input-set
+  identifier: Build_prasadareti143_Harness_ci_1703688915746prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_prasadareti143_Harness_ci_1703688915746
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
