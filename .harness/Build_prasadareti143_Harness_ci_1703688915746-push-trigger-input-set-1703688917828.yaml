@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_prasadareti143_Harness_ci_1703688915746-push-trigger-input-set
+  identifier: Build_prasadareti143_Harness_ci_1703688915746pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_prasadareti143_Harness_ci_1703688915746
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
